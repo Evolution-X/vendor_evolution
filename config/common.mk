@@ -124,13 +124,17 @@ ART_BUILD_TARGET_DEBUG := false
 ART_BUILD_HOST_NDEBUG := false
 ART_BUILD_HOST_DEBUG := false
 
-# Do not include art debug targets
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
-# Strip the local variable table and the local variable type table to reduce
-# the size of the system image. This has no bearing on stack traces, but will
-# leave less information available via JDWP.
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+# Flags
+ifeq ($(TARGET_BUILD_VARIANT), user)
+    # Strip the local variable table and the local variable type table to reduce
+    # the size of the system image. This has no bearing on stack traces, but will
+    # leave less information available via JDWP.
+    PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+    # Disable dexpreopt debug info
+    WITH_DEXPREOPT_DEBUG_INFO := false
+    # Don't include art debug targets
+    PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+endif
 
 # Enable whole-program R8 Java optimizations for SystemUI and system_server,
 # but also allow explicit overriding for testing and development.

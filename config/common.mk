@@ -133,6 +133,8 @@ ifeq ($(TARGET_BUILD_VARIANT), user)
     PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
     # Disable dexpreopt debug info
     WITH_DEXPREOPT_DEBUG_INFO := false
+    # Reduce system server verbosity
+    PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
     # Don't include art debug targets
     PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 endif

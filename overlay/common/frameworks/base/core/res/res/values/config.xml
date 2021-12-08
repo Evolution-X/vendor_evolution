@@ -753,4 +753,7 @@
         <item>org.lineageos.aperture</item>
         <item>org.lineageos.recorder</item>
     </string-array>
+
+    <!-- Suppress Intent Filter Verification Service crashes -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice</string>
 </resources>

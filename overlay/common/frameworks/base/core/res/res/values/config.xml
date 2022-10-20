@@ -55,6 +55,8 @@
         <item>com.shannon.imsservice</item>
         <!-- MediaTek ImsService -->
         <item>com.mediatek.ims</item>
+        <!-- SystemUI -->
+        <item>com.android.systemui</item>
     </string-array>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and

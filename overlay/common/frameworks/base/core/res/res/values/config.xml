@@ -159,8 +159,12 @@
         <item>device_personalization_services/Captions__enable_augmented_modality_input=true</item>
         <item>device_personalization_services/Captions__enable_augmented_modality_language_detection=true</item>
         <item>device_personalization_services/Captions__enable_augmented_music=false</item>
+        <item>device_personalization_services/Captions__enable_clearcut_logging=false</item>
         <item>device_personalization_services/Captions__enable_language_detection=true</item>
         <item>device_personalization_services/Captions__enable_punctuations=true</item>
+        <item>device_personalization_services/Captions__enable_new_model_version_advanced_2023=false</item>
+        <item>device_personalization_services/Captions__new_model_version_advanced_2023=20230808</item>
+        <item>device_personalization_services/Captions__allow_use_public_speech_recognition=true</item>
 
         <!-- Smartspace -->
         <item>device_personalization_services/Echo__smartspace_dedupe_fast_pair_notification=true</item>

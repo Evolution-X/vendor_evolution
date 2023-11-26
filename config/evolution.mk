@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     BatteryStatsViewer \
     EvoEgg \
     GameSpace \
+    OmniJaws \
     OmniStyle
 
 PRODUCT_PACKAGES += \

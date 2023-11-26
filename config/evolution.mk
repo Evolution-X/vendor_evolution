@@ -2,6 +2,7 @@
 PRODUCT_PACKAGES += \
     EvoEgg \
     GameSpace \
+    OmniJaws \
     OmniStyle
 
 ifeq ($(EVO_BUILD_TYPE),Official)

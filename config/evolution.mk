@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
     AxSandbox \
     BatteryStatsViewer \
     EvoEgg \
-    GameSpace
+    GameSpace \
+    OmniStyle
 
 PRODUCT_PACKAGES += \
     Updater

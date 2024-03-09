@@ -1,7 +1,8 @@
 # Evolution X packages
 PRODUCT_PACKAGES += \
     EvoEgg \
-    GameSpace
+    GameSpace \
+    OmniStyle
 
 # BtHelper
 PRODUCT_PACKAGES += \

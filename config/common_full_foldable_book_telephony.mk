@@ -10,3 +10,15 @@ PRODUCT_PRODUCT_PROPERTIES += \
 $(call inherit-product, vendor/lineage/config/telephony.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/foldable_book
+
+# GMS
+WITH_GMS ?= true
+ifeq ($(WITH_GMS),true)
+ifeq ($(TARGET_USES_MINI_GAPPS),true)
+$(call inherit-product, vendor/gms/gms_mini.mk)
+else ifeq ($(TARGET_USES_PICO_GAPPS),true)
+$(call inherit-product, vendor/gms/gms_pico.mk)
+else
+$(call inherit-product, vendor/gms/gms_full.mk)
+endif
+endif

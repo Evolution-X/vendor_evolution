@@ -9,26 +9,31 @@ include vendor/lineage/config/aosp_audio.mk
 include vendor/lineage/config/lineage_audio.mk
 
 # Default notification/alarm sounds
+ifeq ($(WITH_GMS),true)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.notification_sound=Kernel.ogg \
+    ro.config.alarm_alert=Fresh_morning.ogg
+else
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.notification_sound=Argon.ogg \
     ro.config.alarm_alert=Hassium.ogg
+endif
 
 # Apps
 PRODUCT_PACKAGES += \
     AvatarPicker \
-    Backgrounds \
-    Glimpse \
     LatinIME
+
+ifeq ($(WITH_GMS),false)
+PRODUCT_PACKAGES += \
+    Backgrounds \
+    Glimpse
+endif
 
 # Charger
 PRODUCT_PACKAGES += \
-    charger_res_images
-
-ifneq ($(WITH_LINEAGE_CHARGER),false)
-PRODUCT_PACKAGES += \
-    lineage_charger_animation \
-    lineage_charger_animation_vendor
-endif
+    product_charger_res_images \
+    product_charger_res_images_vendor
 
 # Legal
 PRODUCT_PRODUCT_PROPERTIES += \

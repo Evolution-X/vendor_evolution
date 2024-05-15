@@ -200,6 +200,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     rsync
 
+# Flags
+PRODUCT_PACKAGES += \
+    SystemUIFlagFlipper
+
 ifeq ($(WITH_GMS),false)
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

@@ -43,6 +43,9 @@ endif
 ifneq ($(TARGET_CAMERA_PACKAGE_NAME),)
     $(call soong_config_set,camera,package_name,$(TARGET_CAMERA_PACKAGE_NAME))
 endif
+ifneq ($(TARGET_USES_MIUI_CAMERA),)
+    $(call soong_config_set,camera,uses_miui_camera,$(TARGET_USES_MIUI_CAMERA))
+endif
 
 # Libui
 ifneq ($(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS),)

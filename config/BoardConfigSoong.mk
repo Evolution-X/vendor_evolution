@@ -41,6 +41,9 @@ endif
 ifneq ($(TARGET_CAMERA_PACKAGE_NAME),)
     $(call soong_config_set,camera,package_name,$(TARGET_CAMERA_PACKAGE_NAME))
 endif
+ifneq ($(TARGET_CAMERA_SERVICE_EXT_LIB),)
+    $(call soong_config_set,libcameraservice,ext_lib,$(TARGET_CAMERA_SERVICE_EXT_LIB))
+endif
 ifneq ($(TARGET_USES_MIUI_CAMERA),)
     $(call soong_config_set,camera,uses_miui_camera,$(TARGET_USES_MIUI_CAMERA))
 endif

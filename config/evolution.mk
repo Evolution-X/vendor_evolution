@@ -48,6 +48,20 @@ PRODUCT_PACKAGES += \
     ColumbusService
 endif
 
+# Enable blur
+TARGET_ENABLE_BLUR ?= true
+ifeq ($(TARGET_ENABLE_BLUR),true)
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.custom.blur.enable=true \
+    persist.sysui.disableBlur=false \
+    ro.surface_flinger.supports_background_blur=1
+else
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.custom.blur.enable=false \
+    persist.sysui.disableBlur=true \
+    ro.surface_flinger.supports_background_blur=0
+endif
+
 # Disable async MTE on a few processes
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.arm64.memtag.app.com.android.se=off \

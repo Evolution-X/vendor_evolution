@@ -7,8 +7,12 @@ PRODUCT_SIZE := full
 PRODUCT_PACKAGES += \
     Etar \
     Profiles \
-    Recorder \
+    Recorder
+
+ifeq ($(BUILD_SEEDVAULT),true)
+PRODUCT_PACKAGES += \
     Seedvault
+endif
 
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \

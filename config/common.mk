@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SystemUIFlagFlipper
 
+# GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
+
 ifeq ($(WITH_GMS),false)
 # Storage manager
 PRODUCT_SYSTEM_PROPERTIES += \

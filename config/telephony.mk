@@ -35,4 +35,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.android.mobiledata=false
 
 # Inherit BCR
+BUILD_BCR ?= true
+ifeq ($(BUILD_BCR),true)
 $(call inherit-product, vendor/extras/bcr/bcr.mk)
+endif

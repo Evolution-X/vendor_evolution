@@ -31,6 +31,7 @@ SOONG_CONFIG_lineageGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
     camera_override_format_from_reserved \
+    spoof_first_api_level_32 \
     target_camera_package_name \
     target_trust_usb_control_path \
     target_trust_usb_control_enable \
@@ -38,6 +39,7 @@ SOONG_CONFIG_lineageGlobalVars += \
 
 # Soong bool variables
 SOONG_CONFIG_lineageGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
+SOONG_CONFIG_lineageGlobalVars_spoof_first_api_level_32 := $(SPOOF_FIRST_API_LEVEL_32)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0

@@ -370,6 +370,9 @@
         <item>settings_ui/bt_advanced_header_enabled=true</item>
         <item>settings_ui/bt_near_by_suggestion_enabled=true</item>
         <item>settings_ui/bt_le_audio_contact_sharing_enabled=true</item>
+        
+        <item>window_manager/enable_app_compat_aspect_ratio_user_settings=true</item>
+        <item>window_manager/enable_app_compat_user_aspect_ratio_fullscreen=true</item>
     </string-array>
     
     <!-- Flag indicating which package name can access DeviceConfig table -->

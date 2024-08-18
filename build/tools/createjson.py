@@ -9,15 +9,15 @@ import os
 import hashlib
 import json
 
-def generate_json(target_device, product_out, file_name, build_variant):
+def generate_json(target_device, product_out, file_name, build_variant, with_gms):
     output = os.path.join(product_out, f"{target_device}.json")
 
     if os.path.exists(output):
         os.remove(output)
 
-    channel = "15"
+    channel = "15_vanilla" if with_gms == "false" else "15"
 
-    existing_ota_json = os.path.join(f"./evolution/OTA/builds", f"{target_device}.json")
+    existing_ota_json = os.path.join(f"./evolution/OTA{'-VANILLA' if with_gms == 'false' else ''}/builds", f"{target_device}.json")
 
     maintainer = ""
     currently_maintained = False
@@ -117,9 +117,10 @@ def main():
     parser.add_argument("product_out", help="Product output directory")
     parser.add_argument("file_name", help="File name for OTA")
     parser.add_argument("build_variant", help="Build variant")
+    parser.add_argument("with_gms", help="Whether with GMS (true/false)")
 
     args = parser.parse_args()
-    generate_json(args.target_device, args.product_out, args.file_name, args.build_variant)
+    generate_json(args.target_device, args.product_out, args.file_name, args.build_variant, args.with_gms)
 
 if __name__ == "__main__":
     main()

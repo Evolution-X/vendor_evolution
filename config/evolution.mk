@@ -5,6 +5,11 @@ PRODUCT_PACKAGES += \
 ifeq ($(EVO_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
     Updater
+
+ifeq ($(WITH_GMS),false)
+PRODUCT_PACKAGES += \
+    UpdaterVanillaOverlay
+endif
 endif
 
 # Private keys

@@ -6,7 +6,11 @@ EVO_VERSION := 10.3.1
 EVO_BUILD_TYPE ?= Unofficial
 
 # Internal version
+ifeq ($(WITH_GMS),true)
 LINEAGE_VERSION := EvolutionX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(EVO_VERSION)-$(EVO_BUILD_TYPE)
+else
+LINEAGE_VERSION := EvolutionX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(EVO_VERSION)-Vanilla-$(EVO_BUILD_TYPE)
+endif
 
 # Display version
 LINEAGE_DISPLAY_VERSION := v$(EVO_VERSION)-$(shell date +%Y%m%d)

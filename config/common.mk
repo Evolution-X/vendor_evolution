@@ -18,6 +18,9 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
 $(call inherit-product, vendor/pixel-style/config/common.mk)
+
+# Don't dexpreopt prebuilts. (For GMS).
+DONT_DEXPREOPT_PREBUILTS := true
 endif
 
 PRODUCT_BRAND ?= EvolutionX

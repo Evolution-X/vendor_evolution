@@ -2,8 +2,20 @@ PRODUCT_VERSION_MAJOR = 16
 PRODUCT_VERSION_MINOR = 0
 
 # Increase EVO Version with each major release.
-EVO_VERSION := 11.6
+EVO_VERSION_BASE := 11.6
 EVO_BUILD_TYPE ?= Unofficial
+
+ifeq ($(EVO_BUILD_TYPE),Official)
+else ifeq ($(EVO_BUILD_TYPE),Unofficial)
+else
+$(error EVO_BUILD_TYPE must be Official or Unofficial. Current value: $(EVO_BUILD_TYPE))
+endif
+
+ifeq ($(WITH_GMS),true)
+EVO_VERSION := $(EVO_VERSION_BASE)
+else
+EVO_VERSION := $(EVO_VERSION_BASE)-Vanilla
+endif
 
 # Internal version
 LINEAGE_VERSION := EvolutionX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(EVO_VERSION)-$(EVO_BUILD_TYPE)

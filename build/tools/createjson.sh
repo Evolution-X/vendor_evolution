@@ -15,8 +15,7 @@
 # limitations under the License.
 #
 
-#$1=TARGET_DEVICE, $2=PRODUCT_OUT, $3=FILE_NAME
-existingOTAjson=./evolution/OTA/builds/$1.json
+#$1=TARGET_DEVICE, $2=PRODUCT_OUT, $3=FILE_NAME, $4=WITH_GMS
 output=$2/$1.json
 
 #cleanup old file
@@ -24,7 +23,15 @@ if [ -f $output ]; then
 	rm $output
 fi
 
-echo "Generating JSON for OTA..."
+if [ "$4" = "true" ]; then
+    echo "Generating JSON for OTA..."
+    channel="14"
+    existingOTAjson=./evolution/OTA/builds/$1.json
+else
+    echo "Generating JSON for OTA-VANILLA..."
+    channel="14_vanilla"
+    existingOTAjson=./evolution/OTA-VANILLA/builds/$1.json
+fi
 
 if [ -f $existingOTAjson ]; then
 	#get data from already existing device json
@@ -68,7 +75,7 @@ if [ -f $existingOTAjson ]; then
       "oem": "'$oem'",
       "device": "'$device'",
       "filename": "'$filename'",
-      "download": "https://sourceforge.net/projects/evolution-x/files/'$1'/14/'$3'/download",
+      "download": "https://sourceforge.net/projects/evolution-x/files/'$1'/'$channel'/'$3'/download",
       "timestamp": '$timestamp',
       "md5": "'$md5'",
       "sha256": "'$sha256'",
@@ -102,7 +109,7 @@ else
       "oem": "''",
       "device": "''",
       "filename": "'$filename'",
-      "download": "https://sourceforge.net/projects/evolution-x/files/'$1'/14/'$3'/download",
+      "download": "https://sourceforge.net/projects/evolution-x/files/'$1'/'$channel'/'$3'/download",
       "timestamp": '$timestamp',
       "md5": "'$md5'",
       "sha256": "'$sha256'",

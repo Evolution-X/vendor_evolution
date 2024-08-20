@@ -143,6 +143,15 @@ $(call enforce-product-packages-exist-internal,$(lastword $(_include_stack)),pro
 endif
 
 # Bootanimation
+TARGET_INCLUDE_BOOT_ANIMATIONS ?= true
+ifeq ($(TARGET_INCLUDE_BOOT_ANIMATIONS),true)
+include vendor/lineage/bootanimation/prebuilts/prebuilts.mk
+endif
+ifeq ($(TARGET_INCLUDE_BOOT_ANIMATIONS),true)
+PRODUCT_PRODUCT_PROPERTIES += ro.boot.custom_bootanim=true
+else
+PRODUCT_PRODUCT_PROPERTIES += ro.boot.custom_bootanim=false
+endif
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
 PRODUCT_PACKAGES += \

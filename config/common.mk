@@ -128,6 +128,10 @@ $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(LINEAGE_BUI
 endif
 
 # Bootanimation
+TARGET_INCLUDE_BOOT_ANIMATIONS ?= true
+ifeq ($(TARGET_INCLUDE_BOOT_ANIMATIONS),true)
+include vendor/lineage/bootanimation/prebuilts/prebuilts.mk
+endif
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
 PRODUCT_PACKAGES += \

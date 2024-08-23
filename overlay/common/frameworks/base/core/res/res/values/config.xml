@@ -266,26 +266,26 @@
         <item>device_personalization_services/NowPlaying__on_demand_retry_fingerprinter_install=true</item>
         <item>device_personalization_services/NowPlaying__youtube_export_enabled=true</item>
 
-        <!-- Google Live Translate -->
+        <!-- Live Translate -->
         <item>device_personalization_services/SimpleStorage__disable_live_translate_dao_provider=false</item>
         <item>device_personalization_services/Translate__app_blocklist=com.google.android.platform.device_personalization_services/Translate__app_blocklist/string=com.google.android.talk,com.kakao.talk,com.google.android.apps.messaging,org.telegram.messenger,org.telegram.messenger.beta,org.thunderdog.challegram,org.thoughtcrime.securesms,com.whatsapp,com.facebook.orca,com.snapchat.android</item>
-        <item>device_personalization_services/Translate__beta_audio_to_text_languages_in_live_caption=ja</item>
-        <item>device_personalization_services/Translate__blue_chip_translate_enabled=true</item>
-        <item>device_personalization_services/Translate__characterset_lang_detection_enabled=true</item>
-        <item>device_personalization_services/Translate__copy_to_translate_enabled=true</item>
-        <item>device_personalization_services/Translate__differentiate_simplified_and_traditional_chinese=true</item>
+        <item>device_personalization_services/Translate__beta_audio_to_text_languages_in_live_caption=</item>
+        <item>device_personalization_services/Translate__blue_chip_translate_enabled=false</item>
+        <item>device_personalization_services/Translate__characterset_lang_detection_enabled=false</item>
+        <item>device_personalization_services/Translate__copy_to_translate_enabled=false</item>
+        <item>device_personalization_services/Translate__differentiate_simplified_and_traditional_chinese=false</item>
         <item>device_personalization_services/Translate__disable_session_state=false</item>
-        <item>device_personalization_services/Translate__disable_translate_without_system_animation=true</item>
-        <item>device_personalization_services/Translate__enable_chronicle_migration=true</item>
+        <item>device_personalization_services/Translate__disable_translate_without_system_animation=false</item>
+        <item>device_personalization_services/Translate__enable_chronicle_migration=false</item>
         <item>device_personalization_services/Translate__enable_default_langid_model=false</item>
-        <item>device_personalization_services/Translate__enable_dictionary_langid_detection=true</item>
+        <item>device_personalization_services/Translate__enable_dictionary_langid_detection=false</item>
         <item>device_personalization_services/Translate__enable_language_profile_quick_update=false</item>
         <item>device_personalization_services/Translate__enable_nextdoor=false</item>
         <item>device_personalization_services/Translate__enable_opmv4_service=false</item>
         <item>device_personalization_services/Translate__enable_spa_setting=false</item>
-        <item>device_personalization_services/Translate__replace_auto_translate_copied_text_enabled=true</item>
-        <item>device_personalization_services/Translate__translation_service_enabled=true</item>
-        <item>device_personalization_services/Translate__translator_expiration_enabled=true</item>
+        <item>device_personalization_services/Translate__replace_auto_translate_copied_text_enabled=false</item>
+        <item>device_personalization_services/Translate__translation_service_enabled=false</item>
+        <item>device_personalization_services/Translate__translator_expiration_enabled=false</item>
         <item>device_personalization_services/Translate__use_translate_kit_streaming_api=false</item>
 
         <!-- Gboard -->

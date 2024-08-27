@@ -268,7 +268,7 @@
 
         <!-- Google Live Translate -->
         <item>device_personalization_services/SimpleStorage__disable_live_translate_dao_provider=false</item>
-        <item>device_personalization_services/Translate__app_blocklist=com.google.android.talk</item>
+        <item>device_personalization_services/Translate__app_blocklist=com.google.android.platform.device_personalization_services/Translate__app_blocklist/string=com.google.android.talk,com.kakao.talk,com.google.android.apps.messaging,org.telegram.messenger,org.telegram.messenger.beta,org.thunderdog.challegram,org.thoughtcrime.securesms,com.whatsapp,com.facebook.orca,com.snapchat.android</item>
         <item>device_personalization_services/Translate__beta_audio_to_text_languages_in_live_caption=ja</item>
         <item>device_personalization_services/Translate__blue_chip_translate_enabled=true</item>
         <item>device_personalization_services/Translate__characterset_lang_detection_enabled=true</item>

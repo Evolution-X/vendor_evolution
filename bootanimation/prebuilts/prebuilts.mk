@@ -19,6 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/bootanimation/prebuilts/bootanimation_cm.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_cm.zip \
+    vendor/lineage/bootanimation/prebuilts/bootanimation_ctos.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_ctos.zip \
     vendor/lineage/bootanimation/prebuilts/bootanimation_cyberpunk.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_cyberpunk.zip \
     vendor/lineage/bootanimation/prebuilts/bootanimation_evo_anniv.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_evo_anniv.zip \
     vendor/lineage/bootanimation/prebuilts/bootanimation_google.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_google.zip \

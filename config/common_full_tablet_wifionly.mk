@@ -6,6 +6,8 @@ $(call inherit-product, vendor/lineage/config/tablet.mk)
 
 $(call inherit-product, vendor/lineage/config/wifionly.mk)
 
+TARGET_DEVICE_IS_TABLET ?= true
+
 # GMS
 WITH_GMS ?= true
 ifeq ($(WITH_GMS),true)

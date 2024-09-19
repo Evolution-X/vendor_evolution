@@ -49,6 +49,9 @@ endif
 
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
+
+# Disable debug and verbose logging by default
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += log.tag=I
 endif
 
 # Backup Tool

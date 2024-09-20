@@ -67,6 +67,7 @@ if [ -f $existingOTAjson ]; then
 	if [ ! -z "$telegram" ]; then
 		telegram="https:"$telegram
 	fi
+        github=$(grep -n "\"github\"" $existingOTAjson | cut -d ":" -f 3 | sed 's/"//g' | sed 's/,//g' | xargs)
 
     echo '{
   "response": [
@@ -85,7 +86,8 @@ if [ -f $existingOTAjson ]; then
       "forum": "'$forum'",
       "firmware": "'$firmware'",
       "paypal": "'$paypal'",
-      "telegram": "'$telegram'"
+      "telegram": "'$telegram'",
+      "github": "'$github'"
     }
   ]
 }' >> $output
@@ -119,7 +121,8 @@ else
       "forum": "''",
       "firmware": "''",
       "paypal": "''",
-      "telegram": "''"
+      "telegram": "''",
+      "github": "''"
     }
   ]
 }' >> $output

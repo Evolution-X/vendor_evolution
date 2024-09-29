@@ -15,6 +15,11 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+# LMO packages
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # BtHelper
 PRODUCT_PACKAGES += \
     BtHelper

@@ -1,6 +1,7 @@
 # Evolution X packages
 PRODUCT_PACKAGES += \
-    EvoEgg
+    EvoEgg \
+    GameSpace
 
 ifeq ($(EVO_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \

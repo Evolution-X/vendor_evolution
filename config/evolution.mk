@@ -1,7 +1,8 @@
 # Evolution X packages
 PRODUCT_PACKAGES += \
     BatteryStatsViewer \
-    EvoEgg
+    EvoEgg \
+    GameSpace
 
 PRODUCT_PACKAGES += \
     Updater

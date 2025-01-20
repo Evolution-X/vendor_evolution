@@ -9,14 +9,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BtHelper
 
-ifeq ($(EVO_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
     Updater
 
 ifeq ($(WITH_GMS),false)
 PRODUCT_PACKAGES += \
     UpdaterVanillaOverlay
-endif
 endif
 
 # Face Unlock

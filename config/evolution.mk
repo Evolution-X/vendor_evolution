@@ -5,14 +5,12 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle
 
-ifeq ($(EVO_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
     Updater
 
 ifeq ($(WITH_GMS),false)
 PRODUCT_PACKAGES += \
     UpdaterVanillaOverlay
-endif
 endif
 
 # BtHelper

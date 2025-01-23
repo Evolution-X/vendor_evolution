@@ -39,4 +39,7 @@
 
     <!-- Whether to show the "glanceable hub" settings on mobile. -->
     <bool name="config_show_glanceable_hub_toggle_setting_mobile">true</bool>
+
+    <!-- Whether or not device header widget tile should display in device info page -->
+    <bool name="config_show_device_header_in_device_info">false</bool>
 </resources>

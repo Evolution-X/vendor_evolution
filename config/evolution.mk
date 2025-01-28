@@ -1,3 +1,17 @@
+# PIF values
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.pihooks_MANUFACTURER?=Google \
+    persist.sys.pihooks_BRAND?=google \
+    persist.sys.pihooks_PRODUCT?=comet_beta \
+    persist.sys.pihooks_DEVICE?=comet \
+    persist.sys.pihooks_ID?=BP22.250103.008 \
+    persist.sys.pihooks_SECURITY_PATCH?=2025-01-05 \
+    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=35
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PihooksGmsFp="google/comet_beta/comet:Baklava/BP22.250103.008/12932282:user/release-keys" \
+    PihooksGmsModel="Pixel 9 Pro Fold"
+
 # Evolution X packages
 PRODUCT_PACKAGES += \
     EvoEgg \

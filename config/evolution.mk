@@ -1,3 +1,19 @@
+# PIF values
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.pihooks_MANUFACTURER?=Google \
+    persist.sys.pihooks_BRAND?=google \
+    persist.sys.pihooks_PRODUCT?=panther_beta \
+    persist.sys.pihooks_DEVICE?=panther \
+    persist.sys.pihooks_ID?=BP31.250523.010 \
+    persist.sys.pihooks_RELEASE?=12 \
+    persist.sys.pihooks_SECURITY_PATCH?=2025-06-05 \
+    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=21 \
+    persist.sys.pihooks_SDK_INT?=32
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PihooksGmsFp="google/panther_beta/panther:16/BP31.250523.010/13667654:user/release-keys" \
+    PihooksGmsModel="Pixel 7"
+
 # Evolution X packages
 PRODUCT_PACKAGES += \
     EvoEgg \

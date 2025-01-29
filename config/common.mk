@@ -2,7 +2,6 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product, vendor/lineage/config/evolution.mk)
 $(call inherit-product, vendor/extras/evolution.mk)
-$(call inherit-product-if-exists, vendor/certification/config.mk)
 
 # Pixel additions
 ifeq ($(WITH_GMS),true)

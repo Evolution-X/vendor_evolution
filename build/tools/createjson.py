@@ -60,10 +60,10 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
                 "size": size,
                 "version": version,
                 "buildtype": build_variant,
-                "forum": f"https:{forum}" if forum else "",
-                "firmware": f"https:{firmware}" if firmware else "",
-                "paypal": f"https:{paypal}" if paypal else "",
-                "telegram": f"https:{telegram}" if telegram else "",
+                "forum": f"{forum}" if forum else "",
+                "firmware": f"{firmware}" if firmware else "",
+                "paypal": f"{paypal}" if paypal else "",
+                "telegram": f"{telegram}" if telegram else "",
                 "github": github,
                 "initial_installation_images": initial_installation_images
             }

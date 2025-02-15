@@ -34,6 +34,7 @@
         <item>com.android.systemui.clocks.metro</item>
         <item>com.android.systemui.clocks.numoverlap</item>
         <item>com.android.systemui.clocks.weather</item>
+		<item>com.android.systemui.clocks.bignum2</item>
     </string-array>
 
     <!-- Icons that don't show in a collapsed non-keyguard statusbar -->

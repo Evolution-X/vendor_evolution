@@ -2,15 +2,15 @@
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.pihooks_MANUFACTURER?=Google \
     persist.sys.pihooks_BRAND?=google \
-    persist.sys.pihooks_PRODUCT?=comet_beta \
-    persist.sys.pihooks_DEVICE?=comet \
-    persist.sys.pihooks_ID?=BP22.250103.008 \
-    persist.sys.pihooks_SECURITY_PATCH?=2025-01-05 \
-    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=35
+    persist.sys.pihooks_PRODUCT?=tokay_beta \
+    persist.sys.pihooks_DEVICE?=tokay \
+    persist.sys.pihooks_ID?=BP22.250124.009 \
+    persist.sys.pihooks_SECURITY_PATCH?=2025-02-05 \
+    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=21
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PihooksGmsFp="google/comet_beta/comet:Baklava/BP22.250103.008/12932282:user/release-keys" \
-    PihooksGmsModel="Pixel 9 Pro Fold"
+    PihooksGmsFp="google/tokay_beta/tokay:Baklava/BP22.250124.009/13034193:user/release-keys" \
+    PihooksGmsModel="Pixel 9"
 
 # Evolution X packages
 PRODUCT_PACKAGES += \

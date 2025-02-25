@@ -2,6 +2,9 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product, vendor/lineage/config/evolution.mk)
 $(call inherit-product, vendor/extras/evolution.mk)
+ifeq ($(TARGET_INCLUDE_VIPERFX),true)
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+endif
 
 # Pixel additions
 ifeq ($(WITH_GMS),true)

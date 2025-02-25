@@ -2,6 +2,9 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product, vendor/lineage/config/evolution.mk)
 $(call inherit-product, vendor/extras/evolution.mk)
+ifeq ($(TARGET_INCLUDE_VIPERFX),true)
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+endif
 
 # Exclude kernel platform repos from bp scanning
 PRODUCT_SOURCE_ROOT_DIRS += -kernel/platform

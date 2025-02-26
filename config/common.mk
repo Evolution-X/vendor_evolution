@@ -116,6 +116,11 @@ ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 include vendor/lineage/config/lineage_sdk_common.mk
 endif
 
+ART_BUILD_TARGET_NDEBUG := false
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := false
+ART_BUILD_HOST_DEBUG := false
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
@@ -128,6 +133,9 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # but also allow explicit overriding for testing and development.
 SYSTEM_OPTIMIZE_JAVA ?= true
 SYSTEMUI_OPTIMIZE_JAVA ?= true
+
+# Disable dex2oat debug
+USE_DEX2OAT_DEBUG := false
 
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false

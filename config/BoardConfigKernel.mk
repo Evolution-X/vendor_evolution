@@ -146,6 +146,11 @@ ifeq ($(TARGET_KERNEL_UNSAFE_DDK_HEADERS),true)
     KERNEL_BAZEL_FLAGS += --//build/kernel/kleaf:allow_ddk_unsafe_headers
 endif
 
+# Use "safe" default values for kernel build user & host - matches Pixels, helps avoid detection
+KERNEL_MAKE_FLAGS += \
+    KBUILD_BUILD_USER="build-user" \
+    KBUILD_BUILD_HOST="build-host"
+
 # Add back threads, ninja cuts this to $(getconf _NPROCESSORS_ONLN)/2
 KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
 

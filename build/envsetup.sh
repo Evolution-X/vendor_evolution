@@ -935,3 +935,5 @@ function generate_host_overrides() {
 }
 
 generate_host_overrides
+
+export USE_THINLTO_CACHE=true

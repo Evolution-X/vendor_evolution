@@ -75,3 +75,7 @@ include vendor/evolution-priv/keys/keys.mk
 else
 -include vendor/evolution-priv/keys/keys.mk
 endif
+
+BYPASS_CHARGE_SUPPORTED ?= false
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.battery_bypass_supported=$(BYPASS_CHARGE_SUPPORTED)

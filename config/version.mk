@@ -2,7 +2,7 @@ PRODUCT_VERSION_MAJOR = 15
 PRODUCT_VERSION_MINOR = 0
 
 # Increase EVO Version with each major release.
-EVO_VERSION := 10.3.1
+EVO_VERSION := 10.3.2
 EVO_BUILD_TYPE ?= Unofficial
 
 # Internal version

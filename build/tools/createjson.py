@@ -19,13 +19,23 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
 
     existing_ota_json = os.path.join(f"./evolution/OTA{'-VANILLA' if with_gms == 'false' else ''}/builds", f"{target_device}.json")
 
-    maintainer, oem, device, forum, firmware, paypal, telegram, github, initial_installation_images = "", "", "", "", "", "", "", "", []
+    maintainer = ""
+    currently_maintained = False
+    oem = ""
+    device = ""
+    forum = ""
+    firmware = ""
+    paypal = ""
+    telegram = ""
+    github = ""
+    initial_installation_images = []
 
     if os.path.exists(existing_ota_json):
         with open(existing_ota_json, 'r') as f:
             ota_data = json.load(f)
         response_data = ota_data["response"][0]
         maintainer = response_data.get("maintainer", "")
+        currently_maintained = response_data.get("currently_maintained", False)
         oem = response_data.get("oem", "")
         device = response_data.get("device", "")
         forum = response_data.get("forum", "")
@@ -50,6 +60,7 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
         "response": [
             {
                 "maintainer": maintainer,
+                "currently_maintained": currently_maintained,
                 "oem": oem,
                 "device": device,
                 "filename": filename,

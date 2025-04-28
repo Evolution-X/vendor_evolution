@@ -32,7 +32,6 @@ SOONG_CONFIG_lineageGlobalVars += \
     bootloader_message_offset \
     camera_override_format_from_reserved \
     spoof_first_api_level_32 \
-    target_camera_package_name \
     target_trust_usb_control_path \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable \
@@ -54,10 +53,14 @@ TARGET_TRUST_USB_CONTROL_DISABLE ?= 0
 # Soong value variables
 SOONG_CONFIG_lineageGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_lineageGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
-SOONG_CONFIG_lineageGlobalVars_target_camera_package_name := $(TARGET_CAMERA_PACKAGE_NAME)
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_path := $(TARGET_TRUST_USB_CONTROL_PATH)
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_enable := $(TARGET_TRUST_USB_CONTROL_ENABLE)
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_disable := $(TARGET_TRUST_USB_CONTROL_DISABLE)
+
+# Camera package name
+ifneq ($(TARGET_CAMERA_PACKAGE_NAME),)
+    $(call soong_config_set,camera,package_name,$(TARGET_CAMERA_PACKAGE_NAME))
+endif
 
 # libcameraservice extension
 ifneq ($(TARGET_CAMERA_SERVICE_EXT_LIB),)

@@ -28,6 +28,7 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
     paypal = ""
     telegram = ""
     github = ""
+    sourceforge = ""
     initial_installation_images = []
 
     if os.path.exists(existing_ota_json):
@@ -43,6 +44,7 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
         paypal = response_data.get("paypal", "")
         telegram = response_data.get("telegram", "")
         github = response_data.get("github", "")
+        sourceforge = response_data.get("sourceforge", "")
         initial_installation_images = response_data.get("initial_installation_images", [])
 
     filename = file_name
@@ -76,6 +78,7 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
                 "paypal": f"{paypal}" if paypal else "",
                 "telegram": f"{telegram}" if telegram else "",
                 "github": github,
+                "sourceforge": sourceforge,
                 "initial_installation_images": initial_installation_images
             }
         ]

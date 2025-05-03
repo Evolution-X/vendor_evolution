@@ -26,7 +26,6 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
     forum = ""
     firmware = ""
     paypal = ""
-    telegram = ""
     github = ""
     sourceforge = ""
     initial_installation_images = []
@@ -42,7 +41,6 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
         forum = response_data.get("forum", "")
         firmware = response_data.get("firmware", "")
         paypal = response_data.get("paypal", "")
-        telegram = response_data.get("telegram", "")
         github = response_data.get("github", "")
         sourceforge = response_data.get("sourceforge", "")
         initial_installation_images = response_data.get("initial_installation_images", [])
@@ -76,7 +74,6 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
                 "forum": f"{forum}" if forum else "",
                 "firmware": f"{firmware}" if firmware else "",
                 "paypal": f"{paypal}" if paypal else "",
-                "telegram": f"{telegram}" if telegram else "",
                 "github": github,
                 "sourceforge": sourceforge,
                 "initial_installation_images": initial_installation_images

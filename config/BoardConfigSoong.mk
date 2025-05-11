@@ -37,6 +37,10 @@ SOONG_CONFIG_lineageGlobalVars += \
 # Soong bool variables
 SOONG_CONFIG_lineageGlobalVars_spoof_first_api_level_32 := $(SPOOF_FIRST_API_LEVEL_32)
 
+ifneq ($(TARGET_CAMERA_PACKAGE_NAME),)
+    $(error TARGET_CAMERA_PACKAGE_NAME is deprecated, please migrate to soong_config_set,camera,package_name)
+endif
+
 # Libui
 ifneq ($(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS),)
     $(call soong_config_set,libui,additional_gralloc_10_usage_bits,$(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS))

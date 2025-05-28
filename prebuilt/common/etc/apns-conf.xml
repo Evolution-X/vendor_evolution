@@ -3962,4 +3962,5 @@
   <apn carrier="YemenMobile" carrier_id="2349" mcc="421" mnc="03" apn="ymobile" user="ymobile" password="ymobile" authtype="3" type="default,supl" />
   <apn carrier="YemenMobile" carrier_id="2349" mcc="421" mnc="03" apn="ymdata" type="default,supl,fota,cbs,dun" protocol="IPV4V6" />
   <apn carrier="YemenMobile" carrier_id="2349" mcc="421" mnc="03" apn="ymims" type="ims" protocol="IPV4V6" />
+  <apn carrier="Tele2 Internet" mcc="401" mnc="77" apn="internet" protocol="IPV4V6" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
 </apns>

@@ -17,9 +17,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Evolution X packages
 PRODUCT_PACKAGES += \
     EvoEgg \
-    GameSpace \
-    OmniJaws \
-    OmniStyle
+    GameSpace
+#    OmniJaws \
+#    OmniStyle
 
 # BtHelper
 PRODUCT_PACKAGES += \
@@ -71,10 +71,10 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/sysconfig/preinstalled-packages-platform-evolution-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-evolution-product.xml
 
 # ColumbusService
-ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
-PRODUCT_PACKAGES += \
-    ColumbusService
-endif
+#ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
+#PRODUCT_PACKAGES += \
+#    ColumbusService
+#endif
 
 # Disable async MTE on a few processes
 PRODUCT_SYSTEM_EXT_PROPERTIES += \

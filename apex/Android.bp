@@ -1,0 +1,14 @@
+prebuilt_apex {
+    name: "com.google.android.permission",
+    source_apex_name: "com.google.android.permission",
+    required: [
+        "framework-permission.com.android.permission",
+        "service-permission.com.android.permission",
+    ],
+    owner: "google",
+    src: "com.google.android.permission.apex",
+    overrides: ["com.android.permission"],
+    prefer: true,
+    exported_bootclasspath_fragments: ["com.android.permission-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.permission-systemserverclasspath-fragment"],
+}

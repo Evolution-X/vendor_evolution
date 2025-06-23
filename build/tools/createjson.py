@@ -46,10 +46,14 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
         initial_installation_images = response_data.get("initial_installation_images", [])
 
     filename = file_name
-    download = f"https://sourceforge.net/projects/evolution-x/files/{target_device}/{channel}/{file_name}/download"
+    if "Official" in file_name:
+        download = f"https://cdn.evolution-x.org/{target_device}/{channel}/{file_name}/download"
+    else:
+        download = f"https://sourceforge.net/projects/your_unoffical_sourceforge_project/files/{target_device}/{channel}/{file_name}/download"
     version = file_name.split('-')[4]
     v_max, v_min = version.split('.')[0], version.split('.')[1]
     version = f"{v_max}.{v_min}"
+
     buildprop = os.path.join(product_out, "system", "build.prop")
     timestamp = get_timestamp_from_buildprop(buildprop)
     md5 = get_checksum(os.path.join(product_out, file_name), 'md5')

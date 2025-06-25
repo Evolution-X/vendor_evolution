@@ -194,28 +194,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
 
-# Extra tools in Lineage
-PRODUCT_PACKAGES += \
-    bash \
-    curl \
-    getcap \
-    htop \
-    nano \
-    setcap \
-    vim
-
-PRODUCT_PACKAGES += \
-    nano_recovery
-
 # LMOFreeForm
 PRODUCT_PACKAGES += \
     LMOFreeform \
     LMOFreeformSidebar
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/bin/curl \
-    system/bin/getcap \
-    system/bin/setcap
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
@@ -233,23 +215,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 # FRP
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/wipe-frp.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/wipe-frp
-
-# Openssh
-PRODUCT_PACKAGES += \
-    scp \
-    sftp \
-    ssh \
-    sshd \
-    sshd_config \
-    ssh-keygen \
-    start-ssh
-
-PRODUCT_COPY_FILES += \
-    vendor/lineage/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
-
-# rsync
-PRODUCT_PACKAGES += \
-    rsync
 
 ifeq ($(WITH_GMS),false)
 # Storage manager

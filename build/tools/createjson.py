@@ -4,13 +4,25 @@
 # SPDX-FileCopyrightText: 2025 The Evolution X Project
 # SPDX-License-Identifier: Apache-2.0
 
+import subprocess
 import argparse
 import os
 import hashlib
 import json
 
+def git_fetch(directory):
+    """Run git fetch in a given directory."""
+    try:
+        subprocess.check_call(["git", "fetch"], cwd=directory)
+    except subprocess.CalledProcessError as e:
+        print(f"Git fetch failed in {directory}: {e}")
+
 def generate_json(target_device, product_out, file_name, build_variant, with_gms):
     output = os.path.join(product_out, f"{target_device}.json")
+
+    if "Official" in file_name:
+        git_fetch('./evolution/OTA')
+        git_fetch('./evolution/OTA-VANILLA')
 
     if os.path.exists(output):
         os.remove(output)
@@ -83,6 +95,10 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
 
     with open(output, 'w') as f:
         json.dump(json_data, f, indent=2)
+
+    if "Official" in file_name and os.path.exists(existing_ota_json):Add commentMore actions
+        with open(existing_ota_json, 'w') as f:
+            json.dump(json_data, f, indent=2)
 
 def get_timestamp_from_buildprop(buildprop_path):
     with open(buildprop_path, 'r') as f:

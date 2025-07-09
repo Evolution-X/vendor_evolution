@@ -10,6 +10,6 @@ readonly common_aosp_tag=android-16.0.0_r1 # June 2025, Android 16
 
 readonly common_aosp_build_id=BP2A.250605.031.A2 # June 2025, Android 16
 
-readonly topic=B_asb_2025-06
+readonly topic=B_asb_2025-07
 
 readonly merge_method="merge"

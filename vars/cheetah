@@ -8,21 +8,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP2A.250605.031.A2"
+readonly build_id="BP2A.250705.008"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r34"
-readonly aosp_tag="aml_tz6_351400020"
+readonly prev_aosp_tag="aml_tz6_351400020"
+readonly aosp_tag="unknown"
 
-readonly build_number="13578606"
+readonly build_number="13578956"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-bp2a.250605.031.a2-factory-f5e122c5.zip"
-readonly image_sha256="f5e122c5f8600b34fb825eeedb3ced347e0f07c6de589ca7baab1a1d23f1628b"
+readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-bp2a.250705.008-factory-49ac9bc6.zip"
+readonly image_sha256="49ac9bc6b7a49688430d2df361c96f23b85577d25dc0f40c23dbc615212d3eaa"
 
-readonly flash_url="https://flash.android.com/build/13578606?target=cheetah-user&signed"
+readonly flash_url="https://flash.android.com/build/13578956?target=cheetah-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-bp2a.250605.031.a2-0662933e.zip"
-readonly ota_sha256="0662933e3e2e52701eaa4844646336fc79fa3dd0df1a078b297ec97cfea824fe"
+readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-bp2a.250705.008-01f83681.zip"
+readonly ota_sha256="01f83681339a20d40165a35d7eb53568a4125924ae96e383469eeb6160ef6d17"
 
 readonly security_patch="unknown"

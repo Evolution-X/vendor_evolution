@@ -12,8 +12,8 @@ readonly build_id="BP2A.250605.031.A2"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r32"
-readonly aosp_tag="aml_tz6_351400020"
+readonly prev_aosp_tag="aml_tz6_351400020"
+readonly aosp_tag="android-16.0.0_r1"
 
 readonly build_number="13578606"
 
@@ -25,4 +25,4 @@ readonly flash_url="https://flash.android.com/build/13578606?target=raven-user&s
 readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-bp2a.250605.031.a2-0410530d.zip"
 readonly ota_sha256="0410530d19fd8cc9c9dc7af70e552a628f8a6d94dc2358932289496ee3ba6a48"
 
-readonly security_patch="unknown"
+readonly security_patch="2025-06-05"

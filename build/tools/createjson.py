@@ -26,8 +26,8 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
     firmware = ""
     paypal = ""
     github = ""
-    sourceforge = ""
     initial_installation_images = []
+    extra_images = []
 
     if os.path.exists(existing_ota_json):
         with open(existing_ota_json, 'r') as f:
@@ -41,8 +41,8 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
         firmware = response_data.get("firmware", "")
         paypal = response_data.get("paypal", "")
         github = response_data.get("github", "")
-        sourceforge = response_data.get("sourceforge", "")
         initial_installation_images = response_data.get("initial_installation_images", [])
+        extra_images = response_data.get("extra_images", [])
 
     filename = file_name
     if "Official" in file_name:
@@ -77,8 +77,8 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
                 "firmware": f"{firmware}" if firmware else "",
                 "paypal": f"{paypal}" if paypal else "",
                 "github": github,
-                "sourceforge": sourceforge,
-                "initial_installation_images": initial_installation_images
+                "initial_installation_images": initial_installation_images,
+                "extra_images": extra_images
             }
         ]
     }

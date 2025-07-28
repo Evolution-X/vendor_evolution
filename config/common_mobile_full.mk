@@ -16,7 +16,7 @@ PRODUCT_PACKAGES += \
     Twelve
 endif
 
-ifneq ($(PRODUCT_NO_CAMERA),true)
+ifneq ($(TARGET_BUILD_APERTURE_CAMERA),true)
 PRODUCT_PACKAGES += \
     Aperture
 endif

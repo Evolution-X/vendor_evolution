@@ -20,6 +20,20 @@
         <component class=".systemupdate.SystemUpdateSettingsContentProvider" enabled="false" />
     </component-override>
 
+    <component-override package="com.google.android.as">
+        <component class="com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.history.HistoryActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.DefaultMusicPlayerSettingActivity" enabled="false" />
+    </component-override>
+
+    <component-override package="com.google.android.dialer">
+        <component class=".rtt.settings.impl.gateway.RttSettingsDeepLink" enabled="false" />
+    </component-override>
+
     <component-override package="com.google.android.gms">
         <component class=".chimera.GmsIntentOperationService$GmsExternalReceiver" enabled="false" />
         <component class=".stats.service.DropBoxEntryAddedReceiver" enabled="false" />

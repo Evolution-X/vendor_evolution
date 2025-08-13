@@ -24,6 +24,10 @@
         <component class=".rtt.settings.impl.gateway.RttSettingsDeepLink" enabled="false" />
     </component-override>
 
+    <component-override package="com.google.android.googlequicksearchbox">
+        <component class=".OneSearchAimActivity" enabled="true" />
+    </component-override>
+
     <component-override package="com.google.android.gms">
         <component class=".chimera.GmsIntentOperationService$GmsExternalReceiver" enabled="false" />
         <component class=".stats.service.DropBoxEntryAddedReceiver" enabled="false" />
@@ -46,4 +50,12 @@
         <component class=".update.OtaUpdateActivity" enabled="false" />
     </component-override>
 
+    <component-override package="com.google.android.settings.intelligence">
+        <component class="com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivity" enabled="false" />
+        <component class="com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivityInject" enabled="false" />
+        <component class="com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationBootBroadcastReceiver" enabled="false" />
+        <component class="com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationSearchIndexablesProvider" enabled="false" /> 
+        <component class="com.google.android.settings.intelligence.modules.battery.impl.health.BHSettingsActivity" enabled="false" />
+        <component class="com.google.android.settings.intelligence.modules.routines.impl.settings.RoutinesSettingsActivity" enabled="false" />
+    </component-override>
 </config>

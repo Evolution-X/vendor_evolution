@@ -45,8 +45,21 @@
         <component class=".rtt.settings.impl.gateway.RttSettingsDeepLink" enabled="false" />
     </component-override>
 
-        <!-- Hide Live Translate settings TO DO -->
     <component-override package="com.google.android.as">
+        <component class="com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.history.HistoryActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity" enabled="false" />
+        <component class="com.google.intelligence.sense.ambientmusic.DefaultMusicPlayerSettingActivity" enabled="false" />
     </component-override>
 
+    <component-override package="com.google.android.settings.intelligence">
+        <component class="com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivity" enabled="false" />
+        <component class="com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivityInject" enabled="false" />
+        <component class="com.google.android.settings.intelligence.modules.battery.impl.health.BHSettingsActivity" enabled="false" />
+        <component class="com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryWidgetPromoActivity" enabled="false" />
+        <component class="com.google.android.settings.intelligence.modules.routines.impl.settings.RoutinesSettingsActivity" enabled="false" />
+    </component-override>
 </config>

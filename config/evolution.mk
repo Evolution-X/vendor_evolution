@@ -59,3 +59,9 @@ include vendor/evolution-priv/keys/keys.mk
 else
 -include vendor/evolution-priv/keys/keys.mk
 endif
+
+# Other ROM feature flags
+PERF_ANIM_OVERRIDE ?= false
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.activity_anim_perf_override=$(PERF_ANIM_OVERRIDE)

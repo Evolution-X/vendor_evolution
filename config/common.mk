@@ -136,8 +136,7 @@ endif
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
 PRODUCT_PACKAGES += \
-    bootanimation.zip \
-    bootanimation-dark.zip
+    bootanimation.zip
 
 # Lineage interfaces
 PRODUCT_PACKAGES += \

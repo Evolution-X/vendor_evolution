@@ -11,8 +11,8 @@ include vendor/lineage/config/lineage_audio.mk
 # Default notification/alarm sounds
 ifeq ($(WITH_GMS),true)
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Eureka.ogg \
-    ro.config.alarm_alert=Fresh_start.ogg
+    ro.config.notification_sound=Kernel.ogg \
+    ro.config.alarm_alert=Fresh_morning.ogg
 else
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.notification_sound=Argon.ogg \

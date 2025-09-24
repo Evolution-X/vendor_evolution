@@ -1,3 +1,7 @@
+# BuildFingerprint spoof to fix RCS/Wallet
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=google/komodo_beta/komodo:17/CP21.260330.008/15199860:user/release-keys
+
 # Evolution X packages
 PRODUCT_PACKAGES += \
     AxQuickLook \

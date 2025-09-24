@@ -1,3 +1,12 @@
+# Build fingerprint override
+ENABLE_FINGERPRINT_OVERRIDE ?= false
+ifeq ($(filter Google google,$(PRODUCT_MANUFACTURER)),)
+ifeq ($(ENABLE_FINGERPRINT_OVERRIDE),true)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=google/blazer_beta/blazer:17/CP21.260306.017/15063635:user/release-keys
+endif
+endif
+
 # Evolution X packages
 PRODUCT_PACKAGES += \
     AxThemeStore \

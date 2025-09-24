@@ -1,3 +1,19 @@
+# BuildFingerprint spoof to fix RCS/Wallet
+# Applies to all devices EXCEPT currently-supported Pixels (they don't need it)
+TARGET_ENABLE_FP_OVERRIDE ?= true
+ifeq ($(TARGET_ENABLE_FP_OVERRIDE),true)
+ifeq ($(filter $(LINEAGE_BUILD), \
+    cheetah panther lynx \
+    husky shiba akita felix tangorpro \
+    tokay caiman komodo comet tegu \
+    mustang blazer frankel rango \
+    stallion \
+    ),)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=google/grizzly_beta/grizzly:17/CP41.260828.004.A8/16319058:user/release-keys
+endif
+endif
+
 # Evolution X packages
 PRODUCT_PACKAGES += \
     AppDataBackup \

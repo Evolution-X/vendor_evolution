@@ -14,6 +14,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PihooksGmsFp="google/blazer_beta/blazer:CinnamonBun/CP21.260206.011/14911669:user/release-keys" \
     PihooksGmsModel="Pixel 10 Pro"
 
+ENABLE_FINGERPRINT_OVERRIDE ?= false
+ifeq ($(filter Google google,$(PRODUCT_MANUFACTURER)),)
+ifeq ($(ENABLE_FINGERPRINT_OVERRIDE),true)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=google/blazer_beta/blazer:CinnamonBun/CP21.260206.011/14911669:user/release-keys
+endif
+endif
+
 # Evolution X packages
 PRODUCT_PACKAGES += \
     EvoEgg \

@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "move_transition_animation_layer"
+  state: ENABLED
+  permission: READ_ONLY
+}

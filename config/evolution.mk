@@ -89,7 +89,9 @@ endif
 
 # Other ROM feature flags
 PERF_ANIM_OVERRIDE ?= false
+TARGET_ENABLES_IMS_OVERRIDES ?= false
 TORCH_STR_SUPPORTED ?= true
 
 PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.target_enables_ims_override=$(TARGET_ENABLES_IMS_OVERRIDES) \
     persist.sys.torch_str_support=$(TORCH_STR_SUPPORTED)

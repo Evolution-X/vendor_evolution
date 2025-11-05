@@ -101,8 +101,10 @@ endif
 # Other ROM feature flags
 BYPASS_CHARGE_SUPPORTED ?= false
 PERF_ANIM_OVERRIDE ?= false
+TARGET_ENABLES_IMS_OVERRIDES ?= false
 TORCH_STR_SUPPORTED ?= true
 
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.battery_bypass_supported=$(BYPASS_CHARGE_SUPPORTED) \
+    persist.sys.target_enables_ims_override=$(TARGET_ENABLES_IMS_OVERRIDES) \
     persist.sys.torch_str_support=$(TORCH_STR_SUPPORTED)

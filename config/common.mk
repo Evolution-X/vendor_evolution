@@ -215,10 +215,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nano_recovery
 
-# LMOFreeForm
+# LMO packages
 PRODUCT_PACKAGES += \
     LMOFreeform \
-    LMOFreeformSidebar
+    LMOFreeformSidebar \
+    LMOSystemUIClock
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \

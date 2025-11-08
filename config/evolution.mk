@@ -2,8 +2,8 @@
 PRODUCT_PACKAGES += \
     EvoEgg \
     GameSpace \
-    OmniJaws \
     OmniStyle
+#    OmniJaws \
 
 PRODUCT_PACKAGES += \
     Updater

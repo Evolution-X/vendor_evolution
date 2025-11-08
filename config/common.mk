@@ -12,7 +12,7 @@ endif
 # Pixel additions
 ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
-$(call inherit-product, vendor/pixel-framework/config.mk)
+#$(call inherit-product, vendor/pixel-framework/config.mk)
 $(call inherit-product, vendor/pixel-style/config/common.mk)
 
 # Don't dexpreopt prebuilts. (For GMS).
@@ -214,12 +214,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     nano_recovery
-
-# LMO packages
-PRODUCT_PACKAGES += \
-    LMOFreeform \
-    LMOFreeformSidebar \
-    LMOSystemUIClock
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \

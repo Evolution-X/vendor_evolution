@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settings.connectivity"
+  name: "wifi_multiuser"
+  state: ENABLED
+  permission: READ_ONLY
+}

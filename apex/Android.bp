@@ -1,5 +1,23 @@
+android_app {
+    name: "GooglePermissionController",
+    sdk_version: "system_current",
+    srcs: ["GooglePermissionController/GooglePermissionController.apk"],
+    manifest: "GooglePermissionController/AndroidManifest.xml",
+}
+
+android_app {
+    name: "GoogleSafetyCenterResources",
+    sdk_version: "system_current",
+    srcs: ["GoogleSafetyCenterResources/GoogleSafetyCenterResources.apk"],
+    manifest: "GoogleSafetyCenterResources/AndroidManifest.xml",
+}
+
 prebuilt_apex {
     name: "com.google.android.permission",
+    apps: [
+        "GooglePermissionController",
+        "GoogleSafetyCenterResources",
+    ],
     source_apex_name: "com.google.android.permission",
     required: [
         "framework-permission.com.android.permission",

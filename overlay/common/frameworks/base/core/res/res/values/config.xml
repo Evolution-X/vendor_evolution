@@ -641,6 +641,9 @@
     <!-- If supported, are dreams enabled? (by default) -->
     <bool name="config_dreamsEnabledByDefault">false</bool>
 
+    <!-- AOD wallpaper -->
+    <bool name="config_dozeSupportsAodWallpaper">true</bool>
+
     <!-- Name of the font family to use in the default lockscreen clock -->
     <string name="config_clockFontFamily" translatable="false" />
 </resources>

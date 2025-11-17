@@ -25,7 +25,11 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "com.google.android.permission.apex",
-    overrides: ["com.android.permission"],
+    overrides: [
+        "PermissionController",
+        "SafetyCenterResources",
+        "com.android.permission",
+    ],
     prefer: true,
     exported_bootclasspath_fragments: ["com.android.permission-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.permission-systemserverclasspath-fragment"],

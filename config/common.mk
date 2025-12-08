@@ -297,9 +297,12 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 endif
 endif
 
-# SurfaceFlinger
+# Blur
+TARGET_ENABLE_BLUR ?= true
+ifeq ($(TARGET_ENABLE_BLUR), true)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1
+endif
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \

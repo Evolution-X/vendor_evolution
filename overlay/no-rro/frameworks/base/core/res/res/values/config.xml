@@ -53,4 +53,9 @@
     <string name="config_headlineFontFamily">google-sans-flex</string>
     <string name="config_headlineFontFamilyMedium">google-sans-flex</string>
     <string name="config_headlineFontFeatureSettings">ss03</string>
+
+    <!-- Whether device supports double tap to sleep. This will allow the user to enable/disable
+         double tap gestures in non-action areas in the lock screen and launcher workspace to go to
+         sleep. -->
+    <bool name="config_supportDoubleTapSleep">true</bool>
 </resources>

@@ -33,4 +33,9 @@
     <string name="config_defaultContextualSearchKey">omni.entry_point</string>
     <string name="config_defaultContextualSearchLegacyEnabled">omni.enable_vis</string>
     <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
+
+    <!-- Whether device supports double tap to sleep. This will allow the user to enable/disable
+         double tap gestures in non-action areas in the lock screen and launcher workspace to go to
+         sleep. -->
+    <bool name="config_supportDoubleTapSleep">true</bool>
 </resources>

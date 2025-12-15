@@ -500,6 +500,7 @@
         <item>launcher/show_three_dot_menu_qsb=true</item>
         <item>launcher/use_app_search_for_web=true</item>
         <item>launcher/use_fallback_app_search=true</item>
+        <item>launcher/PSB_RESKIN=true</item>
 
         <!-- Pixel Launcher (Recents) -->
         <item>device_personalization_services/Overview__enable_barcode_detection=false</item>

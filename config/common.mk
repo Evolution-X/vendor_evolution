@@ -341,7 +341,8 @@ PRODUCT_PACKAGES += \
     LineageFrameworksOverlay \
     NetworkStackOverlay \
     NfcOverlay \
-    PermissionControllerOverlay
+    PermissionControllerOverlay \
+    SettingsEvo
 
 # Translations
 CUSTOM_LOCALES += \

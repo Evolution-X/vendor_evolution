@@ -339,7 +339,8 @@ PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay \
     NfcOverlay \
-    PermissionControllerOverlay
+    PermissionControllerOverlay \
+    SettingsEvo
 
 # Translations
 CUSTOM_LOCALES += \

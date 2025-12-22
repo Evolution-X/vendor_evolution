@@ -2,18 +2,18 @@
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.pihooks_MANUFACTURER?=Google \
     persist.sys.pihooks_BRAND?=google \
-    persist.sys.pihooks_PRODUCT?=frankel_beta \
-    persist.sys.pihooks_DEVICE?=frankel \
-    persist.sys.pihooks_ID?=BP41.250916.015.A1 \
+    persist.sys.pihooks_PRODUCT?=panther_beta \
+    persist.sys.pihooks_DEVICE?=panther \
+    persist.sys.pihooks_ID?=CP11.251114.006 \
     persist.sys.pihooks_RELEASE?=12 \
-    persist.sys.pihooks_SECURITY_PATCH?=2025-10-05 \
+    persist.sys.pihooks_SECURITY_PATCH?=2025-12-05 \
     persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=21 \
     persist.sys.pihooks_SDK_INT?=32
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=google/frankel_beta/frankel:16/BP41.250916.015.A1/14394230:user/release-keys \
-    PihooksGmsFp="google/frankel_beta/frankel:16/BP41.250916.015.A1/14394230:user/release-keys" \
-    PihooksGmsModel="Pixel 10"
+    BuildFingerprint=google/panther_beta/panther:16/CP11.251114.006/14560987:user/release-keys  \
+    PihooksGmsFp="google/panther_beta/panther:16/CP11.251114.006/14560987:user/release-keys" \
+    PihooksGmsModel="Pixel 7"
 
 # Evolution X packages
 PRODUCT_PACKAGES += \

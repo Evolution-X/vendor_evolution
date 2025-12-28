@@ -17,6 +17,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Evolution X packages
 PRODUCT_PACKAGES += \
+    BatteryStatsViewer \
     EvoEgg \
     GameSpace \
     OmniStyle

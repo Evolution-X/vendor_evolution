@@ -374,6 +374,10 @@
         <item>launcher/TWO_STAGE_SLOP_PERCENTAGE=66</item>
         <item>launcher/android.provider.launcher_data_access=true</item>
         <item>launcher/PSB_RESKIN=true</item>
+       <item>launcher/enable_one_search=true</item>
+       <item>launcher/enable_one_search_aa=true</item>
+       <item>launcher/enable_quick_launch_v3_aa=true</item>
+       <item>launcher/gboard_update_enter_key=true</item>
 
         <!-- Pixel Launcher (Recents) -->
         <item>device_personalization_services/Overview__enable_barcode_detection=true</item>

@@ -1,6 +1,6 @@
 flag_value {
   package: "android.view.accessibility"
   name: "navbar_flip_order_option"
-  state: ENABLED
+  state: DISABLED
   permission: READ_ONLY
 }

@@ -935,7 +935,12 @@ function build_kernel() {
         echo "Skipping kernel build"
         return
     fi
-    local lineage_version="lineage-$(_get_build_var_cached PRODUCT_VERSION_MAJOR).$(_get_build_var_cached PRODUCT_VERSION_MINOR)"
+    local lineage_version=$(echo $(grep -Po '(?<=EVO_VERSION_BASE := )[0-9.]+' ${ANDROID_BUILD_TOP}/vendor/lineage/config/version.mk) | ${ANDROID_BUILD_TOP}/vendor/lineage/build/tools/evo_to_lineage_branch.py)
+
+    if [[ ${lineage_version} == "oops" ]]; then
+        echo "Skipping kernel build: couldn't determine lineage_version"
+        return
+    fi
 
     local target_kernel_device="$(_get_build_var_cached TARGET_KERNEL_DEVICE)"
     local target_kernel_dir="${ANDROID_BUILD_TOP}/$(_get_build_var_cached TARGET_KERNEL_DIR)"

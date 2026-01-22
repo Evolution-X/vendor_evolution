@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "media_carousel_arrows"
+  state: DISABLED
+  permission: READ_ONLY
+}

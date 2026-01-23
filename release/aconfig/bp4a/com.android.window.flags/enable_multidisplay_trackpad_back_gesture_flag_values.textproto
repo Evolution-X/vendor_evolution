@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.window.flags"
+  name: "enable_multidisplay_trackpad_back_gesture"
+  state: DISABLED
+  permission: READ_ONLY
+}

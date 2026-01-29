@@ -72,6 +72,9 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.arm64.memtag.app.com.android.nfc=off \
     persist.arm64.memtag.process.system_server=off
 
+# Enable Material Design 3 Expressive
+PRODUCT_PRODUCT_PROPERTIES += is_expressive_design_enabled=true
+
 # Private keys
 ifeq ($(EVO_BUILD_TYPE),Official)
 include vendor/evolution-priv/keys/keys.mk

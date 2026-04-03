@@ -21,6 +21,10 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
 $(call inherit-product, vendor/pixel-style/config/common.mk)
+TARGET_INCLUDE_MOSEY ?= false
+ifeq ($(TARGET_INCLUDE_MOSEY),true)
+$(call inherit-product, vendor/gms-mosey/mosey/mosey-vendor.mk)
+endif
 
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true

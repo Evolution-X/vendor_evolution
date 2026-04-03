@@ -1,6 +1,7 @@
 # Evolution X packages
 PRODUCT_PACKAGES += \
     AxSandbox \
+    AxThemeStore \
     BatteryStatsViewer \
     EvoEgg \
     GameSpace \

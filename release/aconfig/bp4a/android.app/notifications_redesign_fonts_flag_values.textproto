@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.app"
+  name: "notifications_redesign_fonts"
+  state: DISABLED
+  permission: READ_ONLY
+}

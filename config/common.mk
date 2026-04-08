@@ -21,8 +21,13 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, vendor/pixel-style/config/common.mk)
 TARGET_INCLUDE_MOSEY ?= false
+TARGET_USES_MOSEY_NOPAUTH ?= false
 ifeq ($(TARGET_INCLUDE_MOSEY),true)
+ifeq ($(TARGET_USES_MOSEY_NOPAUTH),true)
+$(call inherit-product, vendor/gms-mosey/mosey_nopauth/mosey-vendor.mk)
+else
 $(call inherit-product, vendor/gms-mosey/mosey/mosey-vendor.mk)
+endif
 endif
 
 # Don't dexpreopt prebuilts. (For GMS).

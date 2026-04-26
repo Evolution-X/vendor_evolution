@@ -1,6 +1,7 @@
 # Evolution X packages
 PRODUCT_PACKAGES += \
     AxQuickLook \
+    AxSandbox \
     AxThemeStore \
     BatteryStatsViewer \
     EvoEgg \

@@ -2,4 +2,5 @@
 <overlay>
     <item target="bool/enable_nfc_default" value="false" />
     <item target="bool/enable_nfc_url_open_dialog" value="true" />
+    <item target="bool/secure_nfc_default" value="true" />
 </overlay>

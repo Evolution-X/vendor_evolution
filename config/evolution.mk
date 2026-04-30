@@ -102,7 +102,9 @@ endif
 PERF_ANIM_OVERRIDE ?= false
 TARGET_ENABLES_IMS_OVERRIDES ?= false
 TORCH_STR_SUPPORTED ?= true
+USE_REALITY_ENGINE ?= true
 
 PRODUCT_PRODUCT_PROPERTIES += \
+    persist.display.reality.engine.enabled=$(USE_REALITY_ENGINE) \
     persist.sys.target_enables_ims_override=$(TARGET_ENABLES_IMS_OVERRIDES) \
     persist.sys.torch_str_support=$(TORCH_STR_SUPPORTED)

@@ -25,6 +25,7 @@ LINEAGE_DISPLAY_VERSION := v$(EVO_VERSION)-$(shell date +%Y%m%d)
 
 # Evolution X version properties
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.evolution.build.type=$(EVO_BUILD_TYPE) \
     ro.evolution.build.version=$(LINEAGE_VERSION) \
     ro.evolution.display.version=$(LINEAGE_DISPLAY_VERSION) \
     ro.evolution.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \

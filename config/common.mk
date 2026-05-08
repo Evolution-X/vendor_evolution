@@ -315,6 +315,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 endif
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    AppLocker \
     GameSpace \
     Launcher3QuickStep \
     Settings \

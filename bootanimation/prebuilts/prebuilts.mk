@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/bootanimation/prebuilts/bootanimation_du.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_du.zip \
     vendor/lineage/bootanimation/prebuilts/bootanimation_evo_reveal.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_evo_reveal.zip \
     vendor/lineage/bootanimation/prebuilts/bootanimation_google.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_google.zip \
-    vendor/lineage/bootanimation/prebuilts/bootanimation_google_monet.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_google_monet.zip \
     vendor/lineage/bootanimation/prebuilts/bootanimation_pac.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_pac.zip \
     vendor/lineage/bootanimation/prebuilts/bootanimation_rr.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_rr.zip \
     vendor/lineage/bootanimation/prebuilts/bootanimation_slim.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation_slim.zip \

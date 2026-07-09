@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260605.012"
+readonly build_id="CP2A.260705.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15430684"
+readonly build_number="15641320"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-cp2a.260605.012-factory-417b2144.zip"
-readonly image_sha256="417b2144fd9ca9b7d69914d00a41bcc16d4722c7b556d6cdc31eefa1707c8b5e"
+readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-cp2a.260705.006-factory-23d564ad.zip"
+readonly image_sha256="23d564ad5d0db2d04fa4bbde43930c9b0f8e570a51e8090c8d37c71dc96a2c0c"
 
-readonly flash_url="https://flash.android.com/build/15430684?target=cheetah-user&signed"
+readonly flash_url="https://flash.android.com/build/15641320?target=cheetah-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-cp2a.260605.012-e9a8faaf.zip"
-readonly ota_sha256="e9a8faafaf0595bc9f85793fd9ff24c9c3394caf22306164e403a41d43acd07f"
+readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-cp2a.260705.006-750a8142.zip"
+readonly ota_sha256="750a81420f77492a131bb01d9503eb89be7108f4031431bdc7e33d25f09d7387"

@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260605.012"
+readonly build_id="CP2A.260705.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15430684"
+readonly build_number="15641320"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-cp2a.260605.012-factory-4f24fcfb.zip"
-readonly image_sha256="4f24fcfb8f88ab8d82927e9de60476bca2ad08da1fd72a64f46ab56170ea6ab7"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-cp2a.260705.006-factory-ed94a24e.zip"
+readonly image_sha256="ed94a24e693a28f236e87c9e03436871c2dd6b03b4b56c5839598115d0372b0b"
 
-readonly flash_url="https://flash.android.com/build/15430684?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/15641320?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-cp2a.260605.012-c0e1da1e.zip"
-readonly ota_sha256="c0e1da1e02d4b7092d713f3feec3410b2a76681fdc0f1c2d96d7c635fae2b203"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-cp2a.260705.006-87012317.zip"
+readonly ota_sha256="87012317eff74f53d315f573ba88634f30f7dd66877620481ebc5e23ea8c653b"

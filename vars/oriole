@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260605.012"
+readonly build_id="CP2A.260705.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15430684"
+readonly build_number="15641320"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/oriole-cp2a.260605.012-factory-c36da265.zip"
-readonly image_sha256="c36da265c37ae4539d7e3811a6d7a74233c70923be7e29685a3f5647d3d51c09"
+readonly image_url="https://dl.google.com/dl/android/aosp/oriole-cp2a.260705.006-factory-ed43367c.zip"
+readonly image_sha256="ed43367cd2f06bce83ad66813e544d11262e9bb4acac6c59dfba394da3b0ef8b"
 
-readonly flash_url="https://flash.android.com/build/15430684?target=oriole-user&signed"
+readonly flash_url="https://flash.android.com/build/15641320?target=oriole-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-cp2a.260605.012-558f3445.zip"
-readonly ota_sha256="558f34450847eaf8ad3b11a1ae99a48c8bdfef9c82009d6d02598da33358eee2"
+readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-cp2a.260705.006-16ad6ce3.zip"
+readonly ota_sha256="16ad6ce3ade2646a0d2bc9a228e9479618561ef70a03988f2171b81b3d92f04c"

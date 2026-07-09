@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260605.012"
+readonly build_id="CP2A.260705.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15430684"
+readonly build_number="15641320"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/komodo-cp2a.260605.012-factory-ac4d256a.zip"
-readonly image_sha256="ac4d256a74021e5a2cf833ba9a383445a2c6c4fc7c6659a6c9eac0419b8be142"
+readonly image_url="https://dl.google.com/dl/android/aosp/komodo-cp2a.260705.006-factory-3f39b4fc.zip"
+readonly image_sha256="3f39b4fc76870360cc1bb75315bcb5ee531a141368b962899b9d89f1149675b9"
 
-readonly flash_url="https://flash.android.com/build/15430684?target=komodo-user&signed"
+readonly flash_url="https://flash.android.com/build/15641320?target=komodo-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-cp2a.260605.012-f0c96b29.zip"
-readonly ota_sha256="f0c96b29f50910696b944d851f6a95836e243946e1aa2a85eab0c5ec3d2a0268"
+readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-cp2a.260705.006-ca571367.zip"
+readonly ota_sha256="ca571367699356f773a986113103a773b9d182cf51a6532451b3cd9998b0cb45"

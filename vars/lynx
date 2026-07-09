@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260605.012"
+readonly build_id="CP2A.260705.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15430684"
+readonly build_number="15641320"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/lynx-cp2a.260605.012-factory-65b8defa.zip"
-readonly image_sha256="65b8defa1a547a9a59b95c37aa3fb1c952098b052e2181e6c80674f5b9d58879"
+readonly image_url="https://dl.google.com/dl/android/aosp/lynx-cp2a.260705.006-factory-ba6e0e87.zip"
+readonly image_sha256="ba6e0e873d9350c1e246050b892e17ed7650cef1ded20411b25df74a763bd6eb"
 
-readonly flash_url="https://flash.android.com/build/15430684?target=lynx-user&signed"
+readonly flash_url="https://flash.android.com/build/15641320?target=lynx-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-cp2a.260605.012-4e6b40d6.zip"
-readonly ota_sha256="4e6b40d63e06f7827a70d577a9e09a047ad87f4cb6c8aaab1099a42390a5b93c"
+readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-cp2a.260705.006-f4d6d546.zip"
+readonly ota_sha256="f4d6d546e812da1ebbc9d4028025aa2d3da0e162935e95693e8185d6477e0f27"

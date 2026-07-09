@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260605.012"
+readonly build_id="CP2A.260705.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15430684"
+readonly build_number="15641320"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-cp2a.260605.012-factory-96152b8a.zip"
-readonly image_sha256="96152b8ad35178313b260433421c74c2e341e7e19d62f508e44f19fd518b73e5"
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-cp2a.260705.006-factory-e3afed5f.zip"
+readonly image_sha256="e3afed5fa2d15d0aa11f9913ce6f03142948386512c55c69b5c46931246c6b46"
 
-readonly flash_url="https://flash.android.com/build/15430684?target=tangorpro-user&signed"
+readonly flash_url="https://flash.android.com/build/15641320?target=tangorpro-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-cp2a.260605.012-a8377d1d.zip"
-readonly ota_sha256="a8377d1d75d5badb6dc1175cfd0702e53c04de913a351d9c41cd9eaa2597b05b"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-cp2a.260705.006-a200bf8a.zip"
+readonly ota_sha256="a200bf8a04cbb6940b9fb13dcf811048237657fb7fe8d834ac5d9c7ac20b4492"

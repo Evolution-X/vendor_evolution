@@ -8,6 +8,12 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle
 
+# Skip AppDataBackup on Pixel devices
+ifeq ($(filter Google google,$(PRODUCT_MANUFACTURER)),)
+PRODUCT_PACKAGES += \
+    AppDataBackup
+endif
+
 PRODUCT_PACKAGES += \
     Updater
 

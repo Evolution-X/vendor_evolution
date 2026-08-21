@@ -16,6 +16,7 @@ endif
 
 # Evolution X packages
 PRODUCT_PACKAGES += \
+    AppDataBackup \
     AxSandbox \
     BatteryStatsViewer \
     EvoEgg \

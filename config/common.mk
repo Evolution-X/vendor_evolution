@@ -29,6 +29,9 @@ endif
 
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true
+
+# Relax library check
+RELAX_USES_LIBRARY_CHECK=true
 endif
 
 PRODUCT_BRAND ?= EvolutionX

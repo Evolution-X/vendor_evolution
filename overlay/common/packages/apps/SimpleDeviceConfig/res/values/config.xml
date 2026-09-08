@@ -61,4 +61,22 @@
         <item>backup_and_restore/backup_transport_future_timeout_millis=900000</item>
         <item>backup_and_restore/backup_transport_callback_timeout_millis=900000</item>
     </string-array>
+
+    <!--
+        Product-level flags (FundamentalOS SimpleDeviceConfig fork), applied
+        after the device tree's configs_device. Only for values that must
+        differ from the stock device overlay.
+    -->
+    <string-array name="configs_product">
+        <!--
+            Now Playing on-demand search. Keep the stock "Enhance Now Playing"
+            opt-in presentation (use_new_opt_in_flow), but turn the search
+            button on by default (classic_enabled_by_default only sets the
+            default of ASI's on_demand_switch preference) and drop the
+            "search button is being set up" warning card.
+        -->
+        <item>device_personalization_services/NowPlaying__ambient_music_on_demand_search_use_new_opt_in_flow=true</item>
+        <item>device_personalization_services/NowPlaying__ambient_music_on_demand_classic_enabled_by_default=true</item>
+        <item>device_personalization_services/NowPlaying__on_demand_fingerprinter_being_setup_warning=false</item>
+    </string-array>
 </resources>

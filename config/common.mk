@@ -15,6 +15,10 @@ PRODUCT_SOURCE_ROOT_DIRS += -prebuilts/misc/protobuf_vendorcompat
 
 # Pixel additions
 ifeq ($(WITH_GMS),true)
+PRODUCT_PACKAGES += \
+    SettingsGoogle \
+    SystemUIGoogle
+
 $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
 $(call inherit-product, vendor/pixel-style/config/common.mk)
 TARGET_INCLUDE_MOSEY ?= false
@@ -334,8 +338,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     GameSpace \
     Launcher3QuickStep \
     Settings \
+    SettingsGoogle \
     CarSystemUI \
     NexusLauncherRelease \
+    SystemUIGoogle \
     SystemUI
 
 PRODUCT_PRODUCT_PROPERTIES += \

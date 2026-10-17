@@ -58,6 +58,15 @@ ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
 ifeq ($(TARGET_SUPPORTS_GFU),true)
 $(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
 else
+# Supported Pixels get face unlock from their device trees (face HAL and
+# overlays), so don't build the generic one there
+ifeq ($(filter $(LINEAGE_BUILD), \
+    cheetah panther lynx \
+    husky shiba akita felix tangorpro \
+    tokay caiman komodo comet tegu \
+    mustang blazer frankel rango \
+    stallion yogi kodiak grizzly cubs \
+    ),)
 PRODUCT_PACKAGES += \
     FaceUnlock
 

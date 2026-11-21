@@ -19,10 +19,10 @@ PRODUCT_PACKAGES += \
 # Default ringtone
 ifeq ($(WITH_GMS),true)
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=The_next_adventure.ogg
+    ro.config.ringtone?=The_next_adventure.ogg
 else
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=Orion.ogg
+    ro.config.ringtone?=Orion.ogg
 endif
 
 # Tethering - allow without requiring a provisioning app

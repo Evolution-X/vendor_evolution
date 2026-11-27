@@ -1,0 +1,4 @@
+<resources>
+    <color name="pagination_indicator_dot_color_light">#FFFFFFFF</color>
+    <color name="pagination_indicator_dot_color_dark">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="min_hotseat_icon_space">12dp</dimen>
+    <dimen name="max_hotseat_icon_space">38dp</dimen>
+</resources>

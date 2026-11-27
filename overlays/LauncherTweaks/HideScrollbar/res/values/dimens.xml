@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fastscroll_width">0dp</dimen>
+    <dimen name="fastscroll_track_min_width">0dp</dimen>
+    <dimen name="fastscroll_thumb_touch_inset">0dp</dimen>
+    <dimen name="fastscroll_end_margin">0dp</dimen>
+    <dimen name="fastscroll_popup_margin">0dp</dimen>
+    <dimen name="fastscroll_list_letter_end_margin">0dp</dimen>
+</resources>

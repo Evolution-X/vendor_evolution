@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "EvolutionLauncherHideScrollbar",
+    sdk_version: "current",
+    product_specific: true,
+    certificate: "platform",
+}

@@ -383,6 +383,8 @@ PRODUCT_PACKAGES += \
     PermissionControllerOverlay \
     SettingsEvo
 
+$(call inherit-product, vendor/lineage/config/launcher_tweaks.mk)
+
 # Translations
 CUSTOM_LOCALES += \
     ast_ES \
